@@ -1,0 +1,49 @@
+<view class='resultH'>
+  <image src="../../images/testResultsbg.jpg" style="width:100%;height:120px;" />
+  <view class='resultHTitle'>
+    <view class='resultImg'>
+      <image src='{{headImg}}' style="width:60px;height:60px;margin:5px auto 0px;border-radius: 50%;" />
+    </view>
+    <view>{{characterTxt}}</view>
+    <!-- <view class="resultScore">{{characterScore}}</view> -->
+  </view>
+</view>
+<view class='resultContent'>
+  <view class='resultTabs' wx:if="{{listContents.length>1}}">
+    <ul>
+      <li id="tabs_{{idx}}" class='{{tabsActive=="tabs_"+idx?"active":""}}' wx:for="{{tabs}}" wx:for-item="item" wx:key="idx" wx:for-index="idx" bindtap='changeTabs' data-index="{{idx}}">{{item.name}}</li>
+    </ul>
+  </view>
+  <view class='resultWrapper'>
+    <!-- left -->
+    <view class='resultLeft'>
+      <view class="resultMenu">
+        <view id="item_{{tabSelect}}{{idx}}" class='{{listActive=="item_"+tabSelect+idx?"active":""}}' wx:for="{{lists}}" wx:key="idx" wx:for-index="idx" wx:for-item="item" bindtap='changeItem' data-text="{{item.listTxt}}" data-img-type="{{item.listImgType}}">
+          <i class="iconfont {{item.listIcon}}"></i>
+          {{item.listTxt}}
+        </view>
+      </view>
+    </view>
+    <!-- right -->
+    <view id='resultRight' class='resultRight' bindscroll="scrollTopFun">
+      <scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop.scroll_top}}" bindscroll="scrollTopFun">
+        <view class='title'>{{contentTitle}}</view>
+        <view class="text">
+          <view wx:if="{{IsUpload}}">{{itemCats}}</view>
+          <view wx:else>
+            <view>{{imgTXT}}</view>
+            <navigator class="uploadFile" url='../rightHand/rightHand?imgType={{imgValue}}'>上传</navigator>
+          </view>
+        </view>
+        <view wx:if="{{tag}}">
+          <view class='title'>{{contentTitle1}}</view>
+          <view class="text">
+            <view>
+              {{itemCats1}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

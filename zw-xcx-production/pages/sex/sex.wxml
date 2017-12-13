@@ -1,0 +1,17 @@
+<!--pages/sex/sex.wxml-->
+<view class="sexContainer">
+  <view class='sexTitle'>请选择您的性别</view>
+  <view class='sexMain'>
+    <view class="{{activemale}} sexVal" bindtap='optionMSex'>
+     <i class="iconfont icon-nanren"></i>
+      <text>男</text>
+    </view>
+    <view class="{{activefemale}} sexVal" bindtap='optionFSex'>
+      <i class="iconfont icon-nvren"></i>
+      <text>女</text>
+    </view>
+  </view>
+  <view class="sexFooter">
+    <button class='nextStep' bindtap='sexButton'>下一步</button>
+  </view>
+</view>

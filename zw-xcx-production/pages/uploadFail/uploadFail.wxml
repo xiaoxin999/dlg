@@ -1,0 +1,29 @@
+<!--pages/uploadFail/uploadFail.wxml-->
+<view class='camaraContent'>
+  <view wx:if="{{reject==false}}">
+    <view class='camaraPhoto'>
+      <text class='errorMsg'>上传失败，请重新拍摄</text>
+    </view>
+    <button type='default' class="photographButton" bindtap='repeatUpload'>重新拍摄</button>
+  </view>
+  <view wx:else>
+    <view class='camaraPhoto'>
+      <view class='errorMsg1'>
+        <i wx:if="{{rejectData==false}}" class="iconfont icon-xingzhuang2"></i>
+        <image wx:else src='{{rejectImg}}'  />
+        <view>为了使分析结果更精确，请按标准拍摄</view>
+        <view class='rejectReason'>驳回原因：{{rejectReason}}</view>
+      </view>
+    </view>
+    <button type='default' class="photographButton" bindtap='todoReject'>重新拍摄</button>
+  </view>
+  <view class="camaraFooter">
+    <view class='ewmImg'>
+      <image style="width:80px;height:80px;" src='../../images/gongzongh.png' />
+      <view>关注公众号</view>
+      <view>获取分析结果</view>
+    </view>
+
+  </view>
+
+</view>

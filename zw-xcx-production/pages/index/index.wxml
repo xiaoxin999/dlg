@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class='index_content'>
+  <image style="width: {{imagewidth}}px; height: {{imageheight}}px;" src="{{imagefirstsrc}}" bindload="imageLoad" /> 
+  <view class='login_btn'>
+    <image class='indexImgBtn' bindtap="primary" mode='aspectFit' src='{{indexBtn}}' />
+  </view>
+</view>

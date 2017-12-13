@@ -1,0 +1,25 @@
+<view class="succeed_main">
+    <view class="succeed_hint">
+        <image class="shalouGif" src="../../images/shalou.gif" />
+   </view>
+    <view class="url">
+        <view>真我的真，源自1对1真人解析服务</view>
+        <view>
+          您前面还有 
+          <strong style="color:#fc9412;">{{personCount}}</strong> 
+          人,请耐心等待！
+        </view>
+        <view class="attachText">
+         <view>预计<span>{{fixTime}}</span>分钟</view>
+         <!-- <view><em bindtap="onrefresh">点击屏幕刷新</em></view> -->
+        </view>
+    </view>
+    <view class="bottomEwm">
+        <view>处理时间为法定工作日：9:00~18:00</view>
+        <view class="ewm2">
+            <image class='ewmImg' src="../../images/gongzongh.png" />
+            <view>关注公众号</view>
+            <view>获取分析结果</view>
+        </view>
+    </view>
+</view>

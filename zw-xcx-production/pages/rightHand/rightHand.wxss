@@ -1,0 +1,35 @@
+/* pages/rightHand/rightHand.wxss */
+.camaraContent{
+  /* background: #F7F7F7; */
+}
+.camaraPhoto{
+  width: 100%;
+  margin:0px auto;
+}
+.camaraPhoto img{
+  width: 100%;
+  max-height: 450px;
+  display: block;
+}
+.photographTitle{
+  text-align: center;
+  font-size: 12pt;
+  color: #666666;
+}
+.camaraFooter{
+  position: fixed;
+  width: 98%;
+  bottom: 0;
+  background: #ffffff;
+  padding: 6px 1%;
+  margin:0px auto;
+}
+.camaraBtn{
+  width: 100%;
+  margin:0px auto;
+  height: 30pt;
+  line-height: 30pt;
+  background: #ffb353;
+  color: #fff;
+  font-size: 12pt;
+}

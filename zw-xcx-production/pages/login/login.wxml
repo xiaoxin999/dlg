@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<view class='login_content'>
+  <view class="loginHeader">
+    <image class="logoImg" src="../../images/logo.png"  mode="widthFix" />
+    <text class='logoTxt'>{{login.desc}}</text>
+  </view>  
+  <form class='loginForm' wx:if="{{showPage}}">
+    <view class="section">
+      <input placeholder="请输入您的手机号" type='number' maxlength="11"  bindblur="phoneInput" focus="{{focus}}"/>
+    </view>
+    <view class="section">
+      <input class='verifyInput' placeholder="请输入图形验证码"  bindblur="verifyImgInput" focus="{{focusImg}}"/>
+      <image class='verifyCodeBtn' src='{{imgCode}}' bindtap="getVerifyImgCode"/>
+      <input wx:if="{{false}}" value='{{imgKey}}'/>
+    </view>
+    <view class="section">
+      <input class='verifyInput' placeholder="请输入验证码" bindblur="verifyCodeInput" focus="{{focusCode}}"/>
+      <button class='verifyCodeBtn' disabled='{{disabled}}' bindtap='getVerifyCode'>{{getVerifyTxt}}</button>
+    </view>
+    <view class="section">
+      <text class='error'>{{errorMsg}}</text>
+    </view>
+    <view class='section'>
+    <button class='loginBtn' bindtap="loginSubmit" disabled='{{loginOperate}}'>开始认识真我</button>
+    </view>
+  </form>
+  <view wx:else class='index_loading'>
+    <image style="width:80px;height:80px;margin:0px auto;" src='../../images/loading.gif'/>
+  </view>
+</view>
+

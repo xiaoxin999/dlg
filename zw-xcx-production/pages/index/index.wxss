@@ -1,0 +1,19 @@
+/**index.wxss**/
+.index_content{
+  height: 100%;
+}
+.index_bg{
+  width: 100%;
+  display: block;
+}
+.login_btn{
+  width: 68%;
+  margin:0px auto;
+  position: absolute;
+  bottom: 0%;
+  left: 16%;
+  text-align: center;
+}
+.indexImgBtn{
+  width: 100%;
+}

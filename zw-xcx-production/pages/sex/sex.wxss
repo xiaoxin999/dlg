@@ -1,0 +1,37 @@
+@import '../../lib/font_icon/iconfont.wxss';
+.sexContainer{
+  width:100%;
+  margin:0px auto;
+}
+.sexTitle{
+  text-align: center;
+  color: #333;
+  font-size: 12pt;
+}
+.sexMain{
+  margin-top:4rem;
+}
+.sexMain .sexVal{
+  width: 30%;
+  margin:0px auto;
+  text-align: center;
+  color: #ccc;
+  padding:.5rem 0px;
+}
+.sexMain i{font-size: 5rem;border-radius: 50%;display: block;}
+.sexMain text{font-size: 1rem;text-align: center;display: block}
+.sexMain .nan_active{color:#72d2f6;}
+.sexMain .nv_active{color:#f67372;}
+.sexFooter{
+  width: 100%;
+  margin:6rem auto 0px;
+}
+.nextStep{
+  width: 98%;
+  margin:0px auto;
+  height: 30pt;
+  line-height: 30pt;
+  background: #ffb353;
+  color: #fff;
+  font-size: 12pt;
+}

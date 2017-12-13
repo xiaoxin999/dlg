@@ -1,0 +1,52 @@
+<view class='grayBg'>
+  <view id='selectId1' class='successContainer {{borderColor1}}' bindtap='selectDiv'>
+    <view class='successTitle'>
+      <view class='portrait'>
+          <image style= "width:4rem;height:4rem;border-radius: 50%;" src='../../images/fenxishi_zhao.png'/>  
+      </view>
+      <view class="introduction">
+        <text class="title">赵腾达</text>
+        <view class="starIcon">
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+        </view>
+        <text>90%的人选择了Ta</text>
+      </view>
+    </view>
+    <view class="analystsInfo">
+      <view>"五行性格理论"创始人</view>
+      <view>精通五行、心理学、哲学等，拥有十多年跨界研究和实战经验。</view>
+    </view>
+    <span class="jiaobiao" style="{{showSelect1}}">
+    <i class="iconfont icon-queding"></i>
+    </span>
+  </view>
+  <view id='selectId2' class='successContainer {{borderColor2}}' bindtap='selectDiv'>
+    <view class='successTitle'>
+      <view class='portrait'>
+          <image style= "width:4rem;height:4rem;border-radius: 50%;" src='../../images/fenxishi_he.png'/>  
+      </view>
+      <view class="introduction">
+        <text class="title">何智永</text>
+        <view class="starIcon">
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+            <i class="iconfont icon-xingxing"></i>
+        </view>
+        <text>10%的人选择了Ta</text>
+      </view>
+    </view>
+    <view class="analystsInfo">
+      <view>精通 人力资源、心理学，拥有多年研究和实战经验。</view>
+    </view>
+    <span class="jiaobiao" style="{{showSelect2}}">
+     <i class="iconfont icon-queding"></i>
+    </span>
+  </view>
+  <view>
+    <button class='successBtn' bindtap='successSubmit'>确定</button>
+  </view>
+</view>

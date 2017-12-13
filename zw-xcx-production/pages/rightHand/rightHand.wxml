@@ -1,0 +1,10 @@
+<!--pages/rightHand/rightHand.wxml-->
+<view class='camaraContent'>
+    <view id="imgBtn" class='camaraPhoto'>
+      <image style="width: {{imagewidth}}px; height: {{imageheight}}px;max-height: 350px;" src='{{avatarUrl}}' bindload='imageLoad'/>
+    </view>
+    <view class="photographTitle">示例图：{{handDesc}}</view>
+    <view class="camaraFooter">
+        <button class="camaraBtn" bindtap='takeRightPhoto'>拍照上传</button>
+    </view>
+</view>

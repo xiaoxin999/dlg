@@ -1,0 +1,57 @@
+/* pages/process/process.wxss */
+.succeed_hint{
+  text-align:center;
+  margin:1rem auto 0rem;
+  }
+.shalouGif{
+  width:80px;
+  height:80px;
+}
+.url{
+  text-align: center;
+  color:#333;
+  font-size: 1rem;
+  margin-top:8%;
+  line-height: 26px;
+}
+.attachText{
+  padding: 1rem 0px;
+  font-size: .8rem;
+  text-align: center; 
+  color:#666;
+}
+.attachText span{
+  color:#fc9412;
+  font-size: 2rem;
+  padding: 0px 6px;
+}
+.attachText em{
+  display: block;
+  color:#fc9412;
+  font-size: 1rem;
+  padding: 1rem 0px;
+}
+
+.bottomEwm{
+  text-align: center;
+  font-size: 0.9rem;
+  width:100%;
+  color:#656565;
+  margin-top:20%;
+}
+.ewm2{
+  width: 100%;
+  text-align: center;
+  margin:0px auto;
+}
+.ewmImg{
+  width:120px;
+  height:120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ewm2 ivew{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
